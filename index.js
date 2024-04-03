@@ -20,6 +20,6 @@ app.use(morgan("common"));
 app.use("/api/v1/author", authorRoutes);
 app.use("/api/v1/book", BookRoutes);
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log("start server");
 });
